@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imara Market-Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+    header {
+      background-color: #e53935;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background: #fff8e1;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    nav a {
+      color: #e53935;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    section {
+      padding: 20px;
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .category {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .category:hover {
+      background-color: #fff0f0;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background: #e53935;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      background: white;
+      border-top: 1px solid #eee;
+      z-index: 100;
+    }
+    footer a {
+      flex: 1;
+      text-align: center;
+      padding: 15px 0;
+      text-decoration: none;
+      color: #666;
+      font-size: 14px;
+    }
+    footer a:hover {
+      color: #e53935;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Imara Market</h1>
+      <p>Your one-stop campus shop</p>
+    </header>
+
+    <nav>
+      <a href="#">Hot</a>
+      <a href="flash-sale.html">Flash Sale</a>
+      <a href="#">New</a>
+      <a href="#">Account</a>
+    </nav>
+
+    <section>
+      <h2>Categories</h2>
+      <div class="category-grid">
+        <div class="category">Clothes</div>
+        <div class="category">Electronics</div>
+        <div class="category">Food</div>
+        <div class="category">Services</div>
+        <div class="category">Jobs</div>
+        <div class="category">Properties</div>
+      </div>
+
+      <a href="flash-sale.html" class="btn">🚀 Go to Flash Sale</a>
+    </section>
+
+    <footer>
+      <a href="#">Home</a>
+      <a href="#">Category</a>
+      <a href="#">Message</a>
+      <a href="#">Cart</a>
+      <a href="#">Account</a>
+    </footer>
+  </div>
+</body>
+</html>
