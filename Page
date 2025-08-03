@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD-PLUS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            padding-bottom: 60px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        section {
+            padding: 15px;
+            border-bottom: 10px solid #f5f5f5;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #e53935;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        h3 {
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 0;
+            background: #f5f5f5;
+            color: #666;
+        }
+        
+        .hot-section ul {
+            list-style-type: none;
+        }
+        
+        .hot-section li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .hot-section strong {
+            display: block;
+            color: #e53935;
+        }
+        
+        .sale-tagline {
+            text-align: center;
+            font-weight: bold;
+            color: #e53935;
+            margin: 10px 0;
+        }
+        
+        .sale-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .sale-table th, .sale-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #eee;
+            font-size: 14px;
+        }
+        
+        .sale-table th {
+            background-color: #fff8e1;
+            font-weight: bold;
+        }
+        
+        .flash-sale {
+            background-color: #fff8e1;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .timer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .time-box {
+            background: #e53935;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .pricing-table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .pricing-table td {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+        
+        .sale-price {
+            color: #e53935;
+        }
+        
+        .footer-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            background: white;
+            border-top: 1px solid #eee;
+            z-index: 100;
+        }
+        
+        .footer-nav a {
+            flex: 1;
+            text-align: center;
+            padding: 15px 0;
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer-nav a:hover {
+            color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hot Section -->
+        <section class="hot-section">
+            <h1>Hot</h1>
+            <h2>Earphones</h2>
+            <ul>
+                <li>
+                    <strong>MicroFF</strong>
+                    Airtime Top-Up
+                </li>
+                <li>
+                    <strong>CiscoFF</strong>
+                    Daily Check-In<br>
+                    Win Itel Family Gifts
+                </li>
+                <li>
+                    <strong>Voucher Center</strong>
+                    Okady New Launch
+                </li>
+                <li>
+                    <strong>NICN</strong>
+                    Phone | Appliances | Shoes | TVs | Kitchen
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Home Improvement Sale -->
+        <section>
+            <h2>Home Improvement Sale</h2>
+            <div class="sale-tagline">Style Your Home With Ease!</div>
+            
+            <table class="sale-table">
+                <tr>
+                    <th>Living Room Up to 30% OFF</th>
+                    <th>Kitchen Down to KSh 199</th>
+                    <th>Bedroom Up to 40% OFF</th>
+                    <th>TV & Audios Up to 30% OFF</th>
+                </tr>
+                <tr>
+                    <td>Phone&Accs Drip For Your Device</td>
+                    <td>L'Oreal 50% OFF Today</td>
+                    <td>Official Authentic</td>
+                    <td>Garden Up to 50% OFF</td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- Flash Sale -->
+        <section class="flash-sale">
+            <h2>Flash Sale</h2>
+            <div class="timer">
+                <span>Ends in</span>
+                <span class="time-box">01 : 35 : 05</span>
+            </div>
+            
+            <table class="pricing-table">
+                <tr>
+                    <td>USIL</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="original-price">KSh 599</span><br>
+                        <span class="sale-price">KSh 299</span>
+                    </td>
+                    <td>
+                        <span class="sale-price">KSh 599</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sale-price">KSh 24,399</td>
+                    <td class="sale-price">KSh 199</td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- Footer Navigation -->
+        <h3>What's New</h3>
+        <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">Category</a>
+            <a href="#">Message</a>
+            <a href="#">Cart</a>
+            <a href="#">Account</a>
+        </div>
+    </div>
+</body>
+</html>
